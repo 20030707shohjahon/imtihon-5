@@ -1,0 +1,269 @@
+  nav {
+      width: 100%;
+      height: 80px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: #232536;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      z-index: 5;
+  }
+  
+  .navbar {
+      width: 100%;
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .navbar__menu {
+      max-width: 1046px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar__menu__lists {
+      max-width: 285px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar__menu__lists__list a {
+      font-family: 'inter';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: white;
+  }
+  
+  .navbar__menu__lists__list a:hover {
+      color: #FFD050;
+  }
+  
+  .navbar__btn {
+      width: 147px;
+      height: 56px;
+      padding: 16px, 48px, 16px, 48px;
+      font-family: 'sen';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0px;
+      border: none;
+  }
+  
+  .navbar__btn:hover {
+      background-color: #FFD050;
+  }
+  
+  .hero {
+      width: 100%;
+      height: 720px;
+      background-image: url(/imgs/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      //   padding-top: 208px;
+      margin-top: 80px;
+  }
+  
+  .hero__info {
+      max-width: 804px;
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      margin-top: 128px;
+      z-index: 2;
+  }
+  
+  .hero__info__posted {
+      max-width: 222px;
+      width: 100%;
+      font-family: 'ragu';
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 20px;
+      letter-spacing: 3px;
+      text-align: left;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+  }
+  
+  .prazrashniy {
+      width: 100%;
+      height: 720px;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      background: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  }
+  
+  .hero__info__step {
+      max-width: 803px;
+      width: 100%;
+      font-family: 'sen';
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: -2px;
+      text-align: left;
+      color: white;
+      margin-bottom: 24px;
+  }
+  
+  .hero__info__time {
+      max-width: 243px;
+      width: 100%;
+      font-family: 'ragu';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: white;
+      margin-bottom: 16px;
+  }
+  
+  .yellow__text {
+      font-family: 'ragu';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: #FFD050;
+  }
+  
+  .hero__info__text {
+      max-width: 599px;
+      width: 100%;
+      font-family: 'ragu';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: white;
+      margin-bottom: 48px;
+  }
+  
+  .hero__btn {
+      width: 204px;
+      height: 56px;
+      padding: 16px, 48px, 16px, 48px;
+      border: none;
+      font-family: 'sen';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: black;
+      background-color: #FFD050;
+  }
+  
+  .hero__btn:hover {
+      background-color: white;
+  }
+  
+  #icon_1 {
+      display: none;
+  }
+  
+  //   respons navbar.........................................................................
+  @media(max-width:768px) {
+      .navbar__menu {
+          justify-content: space-around;
+      }
+  }
+  
+  .navbar__menu {
+      position: relative;
+  }
+  
+  @media(max-width:568px) {
+      nav {
+          border-bottom: 1px solid #FFD050;
+      }
+      .navbar__menu__lists {
+          flex-direction: column;
+          margin-top: 240px;
+          margin-right: -210px;
+          //   position: absolute;
+          //   top: 68px;
+          //   left: 270px;
+          height: 160px;
+          align-items: center;
+          padding-right: 20px;
+          transform: translateX(1000px);
+          transition: 1s;
+      }
+      .navbar__menu__lists__list {
+          max-width: 200px;
+          width: 100%;
+          text-align: center;
+          border-radius: 5px;
+          background-color: #2433b9;
+      }
+      .es {
+          transform: translateX(0);
+      }
+      #icon_1 {
+          display: block;
+          color: white;
+          font-size: 25px;
+      }
+      .navbar__menu {
+          justify-content: flex-start;
+      }
+  }
+  
+  //   respons hero...........................................................................
+  @media(max-width:768px) {
+      .hero__info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          height: 425px;
+      }
+      .hero__btn {
+          height: 56px;
+      }
+      .hero__info p {
+          text-align: center;
+      }
+      .hero__info__step {
+          text-align: center;
+      }
+  }
+  
+  @media(max-width:569px) {
+      .hero__info {
+          height: 440px;
+      }
+      .hero__info__posted {
+          font-size: 10px;
+          text-align: start;
+      }
+      .hero__info__step {
+          font-size: 28px;
+          text-align: start;
+      }
+      .hero__info p {
+          text-align: start;
+      }
+      .hero__info__text {
+          max-width: 330px;
+      }
+  }
